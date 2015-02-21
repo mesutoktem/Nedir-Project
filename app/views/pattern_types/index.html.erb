@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Pattern Types</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Pattern text</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @pattern_types.each do |pattern_type| %>
+      <tr>
+        <td><%= pattern_type.name %></td>
+        <td><%= pattern_type.pattern_text %></td>
+        <td><%= link_to 'Show', pattern_type %></td>
+        <td><%= link_to 'Edit', edit_pattern_type_path(pattern_type) %></td>
+        <td><%= link_to 'Destroy', pattern_type, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Pattern type', new_pattern_type_path %>

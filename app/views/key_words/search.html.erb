@@ -1,0 +1,38 @@
+
+<!--
+<%= nav_bar fixed: :top, brand: "Bilgi Tazele", responsive: true do %>
+    <%= menu_group do %>
+        <%= menu_item "Home", root_path %>
+        <%= menu_divider %>
+        <%= drop_down "Products" do %>
+            <%= menu_item "Things you can't afford", new_key_word_path %>
+            <%= menu_item "Things that won't suit you anyway", new_key_word_path %>
+            <%= menu_item "Things you're not even cool enough to buy anyway", new_key_word_path %>
+
+        <% end %>
+        <%= menu_item "About Us", new_key_word_path %>
+        <%= menu_item "Contact", new_key_word_path %>
+    <% end %>
+    <%= menu_group pull: :right do %>
+
+            <%= menu_item "Log Out", new_key_word_path %>
+
+    <% end %>
+<% end %>
+-->
+
+<h1><%= @title %></h1>
+
+<hr/>
+
+<p><%= @text %></p>
+
+
+<!--
+<#%= content_tag :a, "Modal123", href: "#modal", class: 'btn', data: {toggle: 'modal'} %>
+
+<#%= modal_dialog id: "modal",
+                 header: { show_close: true, dismiss: 'modal', title: 'Modal header' },
+                 body:   { content: 'This is the body' },
+                 footer: { content: content_tag(:button, 'Save', class: 'btn') } %>
+-->
