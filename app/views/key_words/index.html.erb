@@ -15,7 +15,6 @@
     <% @key_words.each do |key_word| %>
       <tr>
         <td><%= key_word.name %></td>
-        <td><%= key_word.pattern_type_id %></td>
         <td><%= link_to 'Show', key_word %></td>
         <td><%= link_to 'Edit', edit_key_word_path(key_word) %></td>
         <td><%= link_to 'Destroy', key_word, method: :delete, data: { confirm: 'Are you sure?' } %></td>
