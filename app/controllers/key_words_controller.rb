@@ -62,7 +62,7 @@ class KeyWordsController < ApplicationController
 
     @title= "#{key_word_and_pattern["key_word"]} #{key_word_and_pattern["pattern"].split('_').join(' ')}?".capitalize
 
-    @text= get_pattern_type_text(key_word_and_pattern["pattern"].split('_').join(' '))
+    @text= get_pattern_type_text(key_word_and_pattern["pattern"])
 
     else
 
@@ -128,7 +128,11 @@ class KeyWordsController < ApplicationController
 
   def get_pattern_type_text(pattern_name)
 
-   Pattern.find_by_name(pattern_name).pattern_type.pattern_text
+  return nil unless Pattern.find_by_name(pattern_name).present?
+
+  return nil unless Pattern.find_by_name(pattern_name).pattern_type.present?
+
+  Pattern.find_by_name(pattern_name).pattern_type.pattern_text
 
   end
 
