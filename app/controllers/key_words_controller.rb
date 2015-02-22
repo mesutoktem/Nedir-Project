@@ -60,9 +60,11 @@ class KeyWordsController < ApplicationController
 
     @result="bulundu"
 
-    @title= "#{key_word_and_pattern["key_word"]} #{key_word_and_pattern["pattern"].split('_').join(' ')}?".capitalize
+    crude_title= "#{key_word_and_pattern["key_word"]} #{key_word_and_pattern["pattern"].split('_').join(' ')}"
+    @title="#{crude_title}?".capitalize
 
-    @text= get_pattern_type_text(key_word_and_pattern["pattern"])
+    crude_text=get_pattern_type_text(key_word_and_pattern["pattern"])
+    @text=prepare_pattern_text(crude_title,crude_text)
 
     else
 
@@ -186,6 +188,13 @@ class KeyWordsController < ApplicationController
       format.html { redirect_to key_words_url, notice: 'Key word was successfully destroyed.' }
       format.json { head :no_content }
     end
+  end
+
+
+  def prepare_pattern_text(keyword,pattern_text)
+
+    pattern_text.gsub!PatternType.keyword_symbol,keyword
+
   end
 
   private
