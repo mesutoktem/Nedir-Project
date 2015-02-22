@@ -1,2 +1,56 @@
 <h1>Hoşgeldiniz</h1>
-<p>Find me in app/views/welcome/index.html.erb</p>
+
+
+<%= content_tag :a, "Nedir Projesi Hakkında", href: "#myModal", class: 'btn-primary', data: {toggle: 'modal'} %>
+
+
+
+
+<script>
+
+    $( document ).ready(function() {
+
+        $('#myModal').modal('show');
+    });
+    $( window ).load(function() {
+        console.log( "window loaded" );
+    });
+</script>
+
+<div id="myModal" class="modal fade">
+
+  <div class="modal-dialog">
+
+    <div class="modal-content">
+
+      <div class="modal-header">
+
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+
+        <h4 class="modal-title">Nedir Projesi Hakkında</h4>
+
+      </div>
+
+      <div class="modal-body">
+
+        <p>Bu bir "nedir", "ne anlama gelir", "nasıl yapılır" projesidir.</p>
+        <p><b>Proje Durumu:</b> Geliştirilme aşamasındadır</p>
+
+        <!--<p class="text-warning"><small>Proje Durumu: Geliştirilme aşamasındadır.</small></p>-->
+
+      </div>
+
+      <div class="modal-footer">
+
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Kapat</button>
+
+        <!--<button type="button" class="btn btn-primary">Tamam</button>-->
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
