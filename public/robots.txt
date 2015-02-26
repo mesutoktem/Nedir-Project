@@ -2,7 +2,7 @@
 #
 # To ban all spiders from the entire site uncomment the next two lines:
 User-agent: *
-Disallow: /cgi-bin/
-Disallow: /images/
-Disallow: /tmp/
-Disallow: /private/
+Disallow: /lib/
+Disallow: /db/
+Disallow: /test/
+Disallow: /config/
