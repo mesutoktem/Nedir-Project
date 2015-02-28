@@ -21,13 +21,26 @@
 <% end %>
 -->
 
-<h1><%= @title %></h1>
 
-<hr/>
+<table class="table .table-striped">
 
-<p><%= @text %></p>
+<%set_meta_tags :site => @title, :title => @title%>
+<%set_meta_tags :description => @text%>
 
 
+<th><h1><%= @title %></h1></th>
+
+<tr class="info">
+  <td>
+
+    <p><%= @text %></p>
+  </td>
+
+</tr>
+
+
+
+</table>
 <!--
 <#%= content_tag :a, "Modal123", href: "#modal", class: 'btn', data: {toggle: 'modal'} %>
 

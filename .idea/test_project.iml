@@ -155,6 +155,7 @@
     <orderEntry type="library" scope="PROVIDED" name="libv8 (v3.16.14.7, rbenv: 1.9.3-p551) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="loofah (v2.0.1, rbenv: 1.9.3-p551) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mail (v2.6.3, rbenv: 1.9.3-p551) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="meta-tags (v2.0.0, rbenv: 1.9.3-p551) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mime-types (v2.4.3, rbenv: 1.9.3-p551) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mini_portile (v0.6.2, rbenv: 1.9.3-p551) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="minitest (v5.5.1, rbenv: 1.9.3-p551) [gem]" level="application" />

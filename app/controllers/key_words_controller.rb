@@ -42,6 +42,8 @@ class KeyWordsController < ApplicationController
 
   def search
 
+
+
     result=false
 
     search_for=params["keyword_name"]
@@ -65,6 +67,9 @@ class KeyWordsController < ApplicationController
 
     crude_text=get_pattern_type_text(key_word_and_pattern["pattern"])
     @text=prepare_pattern_text(crude_title,crude_text)
+
+    set_meta_tags :site => @title, :title => @title
+    set_meta_tags :description => @text
 
     else
 
