@@ -4,6 +4,8 @@ class WelcomeController < ApplicationController
 
   def google0b932d77879d3baa
 
+    render :layout => false
+
   end
 
 end
