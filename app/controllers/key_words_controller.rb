@@ -68,8 +68,9 @@ class KeyWordsController < ApplicationController
     crude_text=get_pattern_type_text(key_word_and_pattern["pattern"])
     @text=prepare_pattern_text(crude_title,crude_text)
 
-    set_meta_tags :site => @title, :title => @title
-    set_meta_tags :description => @text
+    set_meta_tags :title => @title
+    set_meta_tags :description => "#{key_word_and_pattern["key_word"]}, #{@title}, #{key_word_and_pattern["key_word"]} nedir, #{key_word_and_pattern["key_word"]} ne anlama gelir, #{key_word_and_pattern["key_word"]} nerede kullanılır, #{key_word_and_pattern["key_word"]} nasıl yapılır",
+                  :keywords => "#{key_word_and_pattern["key_word"]}, #{@title},#{key_word_and_pattern["key_word"]} nedir, #{key_word_and_pattern["key_word"]} ne anlama gelir, #{key_word_and_pattern["key_word"]} nerede kullanılır, #{key_word_and_pattern["key_word"]} nasıl yapılır"
 
     else
 
