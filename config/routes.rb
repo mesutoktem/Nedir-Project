@@ -7,6 +7,8 @@ Rails.application.routes.draw do
 
   get 'welcome/index'
 
+  get 'google0b932d77879d3baa.html', :to=> 'welcome#google0b932d77879d3baa'
+
 
 
 
