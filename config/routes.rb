@@ -11,6 +11,8 @@ Rails.application.routes.draw do
 
   get '/robots.txt' => 'welcome#robots'
 
+  get '/csstest' => 'welcome#csstest'
+
 
 
 

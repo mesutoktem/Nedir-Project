@@ -2,11 +2,59 @@
 <html>
 <head>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag 'blackberry_style' %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= display_meta_tags :site => 'Nedir, Ne demek?' %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+
+
+<div id="header">
+  <div id="logo">
+    <h1>Nedir, Ne Demek ?</h1>
+    <h2>bilgini tazele</h2>
+  </div>
+</div>
+
+
+<div id="myModal" class="modal fade" >
+
+  <div class="modal-dialog">
+
+    <div class="modal-content">
+
+      <div class="modal-header post">
+
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+
+        <h4 class="modal-title">Nedir Projesi Hakkında</h4>
+
+      </div>
+
+      <div class="modal-body post">
+
+        <p>Bu bir "nedir", "ne anlama gelir", "nasıl yapılır" projesidir.</p>
+        <p><b>Proje Durumu:</b> Geliştirilme aşamasındadır</p>
+
+        <!--<p class="text-warning"><small>Proje Durumu: Geliştirilme aşamasındadır.</small></p>-->
+
+      </div>
+
+      <div class="modal-footer">
+
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Kapat</button>
+
+        <!--<button type="button" class="btn btn-primary">Tamam</button>-->
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
 
 <%= yield %>
 
