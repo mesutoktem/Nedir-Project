@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :stres
+
   resources :pattern_types
 
   resources :patterns

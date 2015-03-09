@@ -49,3 +49,5 @@ gem "twitter-bootstrap-rails"
 gem 'pg'
 
 gem 'meta-tags'
+
+gem 'nokogiri'

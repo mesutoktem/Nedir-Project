@@ -17,6 +17,7 @@ class PatternsController < ApplicationController
     @pattern = Pattern.new
   end
 
+
   # GET /patterns/1/edit
   def edit
   end

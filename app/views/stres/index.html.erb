@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Stres</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Content</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @stres.each do |stre| %>
+      <tr>
+        <td><%= stre.title %></td>
+        <td><%= stre.content %></td>
+        <td><%= link_to 'Show', stre %></td>
+        <td><%= link_to 'Edit', edit_stre_path(stre) %></td>
+        <td><%= link_to 'Destroy', stre, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Stre', new_stre_path %>

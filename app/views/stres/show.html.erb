@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <h3><strong>Title:</strong></h3>
+  <%= simple_format(@stre.title) %>
+</p>
+
+<p>
+  <strong>Content:</strong>
+  <%= simple_format(@stre.content) %>
+</p>
+
+<%= link_to 'Edit', edit_stre_path(@stre) %> |
+<%= link_to 'Back', stres_path %>
